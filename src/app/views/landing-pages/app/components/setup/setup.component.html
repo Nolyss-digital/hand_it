@@ -1,0 +1,38 @@
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-7">
+        <div class="title text-center mb-5">
+          <p class="d-flex align-items-center justify-content-center mb-4">
+            <span class="icon bg-primary rounded d-flex justify-content-center align-items-center">
+              <i class="ti ti-user-plus text-white f-18"></i>
+            </span>
+            <i class="ti ti-line-dashed text-primary fs-5"></i>
+            <span class="badge bg-light border text-primary py-2 px-3 f-14">Setup</span>
+          </p>
+          <h3>How It Works</h3>
+          <p class="text-muted">Four steps to get you up and running</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row g-3">
+      <div *ngFor="let step of setupSteps" class="col-lg-6">
+        <div class="card border">
+          <div class="card-body">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <h6 class="text-primary">Step {{ step.stepNumber }}</h6>
+                <p class="text-dark fw-semibold mb-2 f-17">{{ step.title }}</p>
+                <p class="mb-0 text-muted">{{ step.description }}</p>
+              </div>
+              <div class="col-lg-4">
+                <img [src]="step.imageUrl" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

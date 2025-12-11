@@ -1,0 +1,16 @@
+<section class="py-5 counter-section bg-{{bgColor}} bg-shape">
+  <div class="container">
+    <div class="row align-items-center justify-content-between g-3">
+      <div class="col-lg-12">
+        <div class="row align-items-center g-4">
+          <div *ngFor="let counter of counters" class="col-lg-3">
+            <div class="d-flex align-items-center gap-4">
+              <h2 class="fw-bold text-white mb-0">{{ counter.value }}</h2>
+              <p class="mb-0 text-white f-16">{{ counter.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

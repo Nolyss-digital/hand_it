@@ -1,0 +1,54 @@
+<section class="section" id="pricing">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-8">
+        <p class="d-flex align-items-center justify-content-center mb-4">
+          <span class="icon bg-primary rounded d-flex justify-content-center align-items-center">
+            <i class="ti ti-receipt-2 text-white f-18"></i>
+          </span>
+          <i class="ti ti-line-dashed text-dark fs-5"></i>
+          <span class="badge bg-light border text-primary py-2 px-3 f-14">Pricing</span>
+        </p>
+        <h3 class="text-dark">Find the Perfect Plan for Your Goals</h3>
+        <p class="text-muted">
+          Dantes remained confused and silent by this explanation of the thoughts which had unconsciously been working
+          in his mind, or rather soul.
+        </p>
+      </div>
+    </div>
+
+    <div class="row mt-5 g-3">
+      <!-- Loop through the pricingPlans array -->
+      <div class="col-lg-4">
+        <div class="card border-0">
+          <img src="images/price.jpg" alt="price" class="img-fluid rounded">
+        </div>
+      </div>
+      <div *ngFor="let plan of pricingPlans" class="col-lg-4">
+        <div class="card border bg-light-subtle">
+          <div class="card-body">
+            <h4>{{ plan.name }}</h4>
+            <ul class="p-0 list-unstyled d-flex flex-column gap-3 text-muted mt-4">
+              <!-- Loop through features of each plan -->
+              <li *ngFor="let feature of plan.features">
+                <i class="ti ti-circle-check text-success me-1 align-middle"></i> {{ feature }}
+              </li>
+            </ul>
+            <hr class="my-4 border">
+            <div class="price-number my-4">
+              <h2 class="fw-bold m-0 text-dark">${{ plan.price }} <span class="text-muted fs-6 fw-medium">/ {{
+                  plan.period }}</span></h2>
+              <div class="mt-2">
+                <span class="badge bg-light text-success border">{{ plan.discount }}</span>
+              </div>
+            </div>
+            <p class="mb-0 text-muted">{{ plan.description }}</p>
+            <div class="price-btn mt-3">
+              <a href="#!" class="btn btn-primary w-100">{{ plan.buttonText }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

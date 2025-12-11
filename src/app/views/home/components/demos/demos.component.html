@@ -1,0 +1,30 @@
+<section class="section" id="demo">
+  <div class="container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-lg-7">
+        <div class="title text-center mb-3">
+          <h2 class="text-dark lh-base">Creative, Modern And Powerful HomePages</h2>
+          <p class="text-muted">Discover 6 Home Page Options, Each Crafted with a Unique Design Aesthetic</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row justify-content-center">
+      @for (item of demosPages; track $index) {
+      <div class="col-lg-4 col-md-6">
+        <div class="demo-box card">
+          <a [routerLink]="item.link" target="_blank">
+            <img [src]="item.image" alt="demo-img" class="img-fluid mx-auto d-block">
+            <div class="demo-overlay"></div>
+          </a>
+        </div>
+        <div class="text-center">
+          <h4 class="demo-box-title">{{item.name}}</h4>
+        </div>
+      </div>
+      }
+    </div>
+
+  </div>
+</section>

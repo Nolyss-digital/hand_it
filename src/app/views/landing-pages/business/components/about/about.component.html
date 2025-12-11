@@ -1,0 +1,35 @@
+<section class="section" id="about">
+  <div class="container">
+    <div class="row align-items-center justify-content-between g-3">
+      <div class="col-lg-5">
+        <div class="img-part-3 bg-primary p-2 rounded">
+          <img src="images/business-work.jpg" alt="Business Work" class="img-fluid rounded">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <p class="d-flex align-items-center mb-4">
+          <span class="icon bg-primary rounded d-flex justify-content-center align-items-center">
+            <i class="ti ti-info-circle text-white f-18"></i>
+          </span>
+          <i class="ti ti-line-dashed text-primary fs-5"></i>
+          <span class="badge bg-light border text-primary py-2 px-3 f-14">How It Works</span>
+        </p>
+        <h3 class="lh-base">Our Unique Approach</h3>
+        
+        <div *ngFor="let step of approachSteps" class="d-flex gap-3 mb-3 mt-4">
+          <span class="icon-bg bg-light text-primary rounded d-flex justify-content-center align-items-center flex-shrink-0">
+            <i [ngClass]="step.icon"></i>
+          </span>
+          <div>
+            <p class="mb-1 fw-semibold f-18">{{ step.title }}</p>
+            <p class="mb-0 f-15 text-muted">{{ step.description }}</p>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <a href="javascript:void(0);" class="btn btn-primary">View All</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

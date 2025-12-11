@@ -1,0 +1,34 @@
+<section class="section" id="services">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-7">
+        <div class="title text-center mb-5">
+          <p class="d-flex align-items-center justify-content-center mb-4">
+            <span class="icon bg-primary rounded d-flex justify-content-center align-items-center">
+              <i class="ti ti-devices-cog text-white f-18"></i>
+            </span>
+            <i class="ti ti-line-dashed text-primary fs-5"></i>
+            <span class="badge bg-light border text-primary py-2 px-3 f-14">Our Services</span>
+          </p>
+          <h3>Strategies for Thriving in Business</h3>
+          <p class="text-muted">Improving one's business acumen and navigating the complexities of entrepreneurship
+            require</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div *ngFor="let service of services" class="col-lg-4 position-relative">
+        <div class="busi-services-box p-4 bg-white mt-5">
+          <div class="busi-services-icon">
+            <i [ngClass]="service.icon + ' text-white bg-primary'"></i>
+          </div>
+          <div class="busi-services-desc">
+            <h5 class="mb-4 f-18">{{ service.title }}</h5>
+            <p class="text-muted mb-0">{{ service.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

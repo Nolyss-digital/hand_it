@@ -1,0 +1,40 @@
+<section class="section bg-light" id="features">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-lg-6">
+        <div class="title mb-5">
+          <p class="d-flex align-items-center mb-4">
+            <span class="icon bg-primary rounded d-flex justify-content-center align-items-center">
+              <i class="ti ti-key text-white f-18"></i>
+            </span>
+            <i class="ti ti-line-dashed text-primary fs-5"></i>
+            <span class="badge bg-light border text-primary py-2 px-3 f-14">Features</span>
+          </p>
+          <h3>Amazing Features</h3>
+          <p class="text-muted">Their diverse skills and creative approaches ensure that we consistently deliver
+            outstanding results and push the boundaries of what's possible. </p>
+        </div>
+      </div>
+      <div class="col-lg-3 text-end">
+        <a href="#!" class="btn btn-primary">View 12 Features</a>
+      </div>
+    </div>
+    <div class="row mt-5 g-3">
+      <div *ngFor="let feature of features" class="col-lg-6">
+        <div class="card border-0">
+          <div class="card-body">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <span class="icon-bg text-primary rounded d-flex justify-content-center align-items-center flex-shrink-0">
+                <i [class]="feature.icon + ' fs-4'"></i>
+              </span>
+              <p class="mb-0 fw-semibold f-18">{{ feature.title }}</p>
+            </div>
+            <p class="text-muted">{{ feature.description }}</p>
+            <a [href]="feature.link" class="text-primary">View More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

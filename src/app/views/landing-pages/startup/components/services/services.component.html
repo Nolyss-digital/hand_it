@@ -1,0 +1,37 @@
+<section class="section" id="services">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-lg-6">
+        <p class="d-flex align-items-center mb-4">
+          <span class="icon bg-primary rounded d-flex justify-content-center align-items-center">
+            <i class="ti ti-devices-cog text-white f-18"></i>
+          </span>
+          <i class="ti ti-line-dashed text-primary fs-5"></i>
+          <span class="badge bg-light border text-primary py-2 px-3 f-14">Our Services </span>
+        </p>
+        <h3>Our Services Made For You ?</h3>
+        <p class="mb-0 text-muted">Who is suitable to use our services so that the impact is maximized and the benefits
+          can be felt.</p>
+      </div>
+      <div class="col-lg-3">
+        <a href="#!" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+            class="ti ti-player-play-filled me-2 align-middle"></i>See How It Work</a>
+      </div>
+    </div>
+    <hr class="my-5 border">
+    <div class="row g-4">
+      <div *ngFor="let feature of services" class="col-lg-4">
+        <div class="d-flex gap-3 mb-3">
+          <span class="icon-lg text-primary rounded d-flex justify-content-center align-items-center flex-shrink-0">
+            <i class="{{ feature.icon }} fs-2"></i>
+          </span>
+          <div>
+            <p class="mb-1 fw-semibold f-18">{{ feature.title }}</p>
+            <p class="mb-0 f-15 text-muted">{{ feature.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
