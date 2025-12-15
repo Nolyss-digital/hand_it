@@ -11,10 +11,10 @@ import { Component, Input } from '@angular/core';
 })
 export class CounterComponent {
   counters: CounterType[] = [
-    { value: '230', description: 'Startups We Have Funded' },
-    { value: '7k', description: 'Funded From Skywave Community' },
-    { value: '$68B', description: 'Our Combined Valuation' },
-    { value: '10+', description: 'Years Of Best Experience' }
+  { value: '200+', description: 'Projets développés' },
+  { value: '80+', description: 'Clients professionnels' },
+  { value: '99%', description: 'Taux de satisfaction client' },
+  { value: '10+', description: 'Années d’expertise technique' }
   ];
 
   @Input() bgColor!: string

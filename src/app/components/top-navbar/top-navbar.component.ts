@@ -11,8 +11,14 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 })
 export class TopNavbarComponent {
 
-  navLinks=["home","features","services","reviews","team","pricing","contact"]
-
+navLinks = [
+  "accueil",
+  "expertise",
+  "services",
+  "avis-clients",
+  "equipe",
+  "contact"
+];
   @Input() navbarLight?: boolean
   isCollapsed = false;
   isSticky = false

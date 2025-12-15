@@ -2,94 +2,98 @@ import type {  Feature, PricingPlan, service, TeamMember, Testimonial } from "./
 
 export const features: Feature[] = [
   {
-    icon: 'ti ti-apps',
-    title: 'App Integration',
-    description: 'Our product seamlessly integrates with various apps, allowing you to streamline your workflow and enhance productivity.'
+    icon: 'ti ti-code',
+    title: 'Développement sur mesure',
+    description: 'Solutions digitales adaptées à vos besoins métiers.'
   },
   {
-    icon: 'ti ti-jump-rope',
-    title: 'Workflow Builder',
-    description: 'The Workflow Builder feature empowers you to create, customize, and automate tasks with ease. Design efficient workflows.'
+    icon: 'ti ti-device-desktop',
+    title: 'Web & applications',
+    description: 'Sites web, plateformes et outils performants.'
   },
   {
-    icon: 'ti ti-edit',
-    title: 'Specific Tools',
-    description: 'Our product comes equipped with a range of specific tools designed to enhance functionality and improve efficiency.'
+    icon: 'ti ti-shield-lock',
+    title: 'Sécurité & fiabilité',
+    description: 'Protection des données et stabilité en production.'
   },
   {
-    icon: 'ti ti-alarm',
-    title: 'Lifetime Access',
-    description: 'Enjoy the peace of mind that comes with Lifetime Access to our product. Once you purchase, you\'ll receive ongoing updates, support.'
-  },
+    icon: 'ti ti-rocket',
+    title: 'Performance & scalabilité',
+    description: 'Solutions prêtes à évoluer avec votre croissance.'
+  }
 ];
+
+
 
 export const services: service[] = [
   {
-    icon: 'ti ti-rocket',
-    title: 'Start Up',
-    description: "You've just launched your project, and want to minimise risk of downtime"
+    icon: 'ti ti-code',
+    title: 'Développement web',
+    description: 'Sites et plateformes sur mesure.'
   },
   {
-    icon: 'ti ti-briefcase',
-    title: 'Business',
-    description: 'You need to avoid lost revenue from a website outage'
-  },
-  {
-    icon: 'ti ti-shopping-cart',
-    title: 'E-Commerce',
-    description: 'You need to keep your online retail business running 24/7.'
+    icon: 'ti ti-device-mobile',
+    title: 'Développement mobile',
+    description: 'Applications iOS et Android.'
   },
   {
     icon: 'ti ti-artboard',
-    title: 'Digital Design',
-    description: 'It is a long established fact that a reader will be distracted by the readable'
+    title: 'UI / UX Design',
+    description: 'Interfaces claires et efficaces.'
   },
   {
-    icon: 'ti ti-palette',
-    title: 'Unlimited Colors',
-    description: 'The European languages are members of the same family.'
+    icon: 'ti ti-database',
+    title: 'CRM sur mesure',
+    description: 'Outils adaptés à vos processus.'
   },
   {
-    icon: 'ti ti-chess-king',
-    title: 'Strategy Solutions',
-    description: 'He lay on his armour-like back, and if he lifted his head a little'
+    icon: 'ti ti-plug-connected',
+    title: 'Intégrations',
+    description: 'APIs, paiements et outils métiers.'
+  },
+  {
+    icon: 'ti ti-settings',
+    title: 'Maintenance & support',
+    description: 'Suivi, mises à jour et évolutions.'
   }
 ];
+
 
 export const testimonials: Testimonial[] = [
   {
-    name: 'Dorothy C. Swarts',
-    role: 'Product Designer',
+    name: 'Amine B.',
+    role: 'Responsable produit',
     image: 'images/team/avatar-1.jpg',
-    rating: 4.7,
-    review: "I've been using pagedone for a year now and it's made managing my finances so much easier and quick."
+    rating: 4.8,
+    review: 'Une équipe réactive et professionnelle. Le projet a été livré dans les délais avec un excellent niveau de qualité.'
   },
   {
-    name: 'Ronald S. Price',
+    name: 'Sophie M.',
     role: 'CEO',
     image: 'images/team/avatar-3.jpg',
-    rating: 4.4,
-    review: 'With pagedone, I can easily track my investments and see how they\'re performing in real-time.'
+    rating: 4.7,
+    review: 'Très bon accompagnement, de la conception au déploiement. Des solutions claires et efficaces.'
   },
   {
-    name: 'Gary F. Wilson',
-    role: 'Sales Manager',
+    name: 'Karim L.',
+    role: 'Directeur IT',
     image: 'images/team/avatar-5.jpg',
-    rating: 4.5,
-    review: 'Thanks to pagedone, I feel more informed and confident about my investment decisions than ever before.'
+    rating: 4.6,
+    review: 'Code propre, communication fluide et respect des engagements. Une collaboration de confiance.'
   },
   {
-    name: 'Elsie K. Beauc',
-    role: 'Design Lead',
+    name: 'Nadia R.',
+    role: 'Fondatrice',
     image: 'images/team/avatar-6.jpg',
-    rating: 4.3,
-    review: 'I was hesitant to try pagedone at first, but I\'m so glad I did; it\'s exceeded all of my expectations.'
+    rating: 4.7,
+    review: 'Une vraie compréhension de nos besoins et une solution parfaitement adaptée à notre activité.'
   }
 ];
 
+
 export const teamMembers: TeamMember[] = [
   {
-    name: 'Craig M. Landr',
+    name: 'Lounis',
     role: 'Founder',
     image: 'images/team/user-1.jpg',
     twitter: '#!',
@@ -97,8 +101,8 @@ export const teamMembers: TeamMember[] = [
     linkedin: '#!'
   },
   {
-    name: 'Amanda J. Velaz',
-    role: 'Co-Founder',
+    name: 'test',
+    role: 'test',
     image: 'images/team/user-4.jpg',
     twitter: '#!',
     facebook: '#!',
