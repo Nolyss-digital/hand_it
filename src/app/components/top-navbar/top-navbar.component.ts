@@ -14,11 +14,12 @@ export class TopNavbarComponent {
 navLinks = [
   "accueil",
   "expertise",
-  "services",
-  "avis-clients",
-  "equipe",
+  "réalisations",
+  "témoignage",
+  "blog",
   "contact"
 ];
+
   @Input() navbarLight?: boolean
   isCollapsed = false;
   isSticky = false

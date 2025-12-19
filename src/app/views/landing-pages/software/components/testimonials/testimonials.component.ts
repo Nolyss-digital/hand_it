@@ -10,9 +10,9 @@ import { NgbCarouselConfig, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap
   templateUrl: './testimonials.component.html',
   styles: ``
 })
+
 export class TestimonialsComponent {
   activeSlide: number = 0;
-
   testimonials = testimonials
 
   getStars(rating: number) {
@@ -20,6 +20,7 @@ export class TestimonialsComponent {
     const halfStar = rating % 1 !== 0 ? 1 : 0;
     return [...Array(fullStars).fill('full'), ...Array(halfStar).fill('half')];
   }
+  
   private config = inject(NgbCarouselConfig)
 
   constructor() {
