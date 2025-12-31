@@ -11,11 +11,12 @@ import { TeamComponent } from "./components/team/team.component";
 import { TestimonialComponent } from "./components/testimonial/testimonial.component";
 import { CounterComponent } from "../../../components/counter/counter.component";
 import { FooterComponent } from '../../home/components/footer/footer.component';
+import { ClientsComponent } from '@views/business/components/clients/clients.component';
 
 @Component({
   selector: 'app-startup',
   standalone: true,
-  imports: [TopNavbarComponent, HeroComponent, AboutComponent, FeaturesComponent, ServicesComponent, TestimonialComponent, CtaComponent, TeamComponent, PricingComponent, ContactComponent, CounterComponent,FooterComponent],
+  imports: [TopNavbarComponent, HeroComponent, AboutComponent,ClientsComponent, FeaturesComponent, ServicesComponent, TestimonialComponent, CtaComponent, TeamComponent, PricingComponent, ContactComponent, CounterComponent,FooterComponent],
   templateUrl: './startup.component.html',
   styles: ``
 })
