@@ -9,6 +9,6 @@ import { services } from '../data';
   templateUrl: './services.component.html',
   styles: ``
 })
-export class ServicesComponent {
+export class Services {
   services = services
 }

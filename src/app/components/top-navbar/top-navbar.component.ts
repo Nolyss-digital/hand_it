@@ -16,7 +16,6 @@ navLinks = [
   "expertise",
   "réalisations",
   "témoignage",
-  "blog",
   "contact"
 ];
 

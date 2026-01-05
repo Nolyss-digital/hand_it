@@ -2,49 +2,30 @@ import type { PricingPlan, Service, TeamMember, Testimonial } from "./types";
 
 export const services: Service[] = [
   {
-    title: 'Custom Software Development',
-    description: 'We understand that every business has unique needs. Our team can create custom software solutions tailored specifically.',
-    icon: 'ti-device-desktop-analytics',
-    link: '#!',
-    textClass: 'text-muted'
-  },
-  {
-    title: 'Integration Services',
-    description: 'Our software seamlessly integrates with a variety of platforms and tools. We provide integration services to ensure.',
-    icon: 'ti-webhook',
+    title: 'ENGIE – Projet STARSHIP (GEM IS)',
+    description: 'Pilotage et développement d’une application critique de dispatching gaz : gestion en temps réel des capacités de transport et de stockage, calculs asynchrones et exposition des données via APIs pour application web Angular.',
+    icon: 'ti-gas-station',
     link: '#!',
     bgClass: 'bg-primary bg-shape',
     textClass: 'text-white'
   },
   {
-    title: 'Training and Onboarding',
-    description: 'We offer thorough training programs and onboarding sessions to help your team get up to speed with our software quickly.',
-    icon: 'ti-heart-handshake',
+    title: 'La Française AM – Projet YARIS',
+    description: 'Application de gestion immobilière pour les gestionnaires de biens : actifs, baux, locataires et assurances, basée sur une architecture WPF MVVM avec Entity Framework et reporting SSRS.',
+    icon: 'ti-building-estate',
     link: '#!',
     textClass: 'text-muted'
   },
   {
-    title: 'Consulting Services',
-    description: 'Our experts provide strategic consulting to help you leverage our software for maximum benefit. We offer insights.',
-    icon: 'ti-message-user',
-    link: '#!',
-    textClass: 'text-muted'
-  },
-  {
-    title: 'Updates and Maintenance',
-    description: 'We continually update our software to incorporate the latest advancements and features. Our maintenance services.',
-    icon: 'ti-refresh-dot',
-    link: '#!',
-    textClass: 'text-muted'
-  },
-  {
-    title: 'Technical Support',
-    description: 'Our dedicated support team is available 24/7 to assist you with any technical issues you may encounter.',
-    icon: 'ti-headset',
+    title: 'La Française AM – Projet INDICO',
+    description: 'Plateforme back-office d’industrialisation des processus financiers et comptables : automatisation des souscriptions, distributions, génération documentaire et flux SEPA.',
+    icon: 'ti-settings-automation',
     link: '#!',
     textClass: 'text-muted'
   }
 ];
+
+
 
 export const teamMembers: TeamMember[] = [
   {

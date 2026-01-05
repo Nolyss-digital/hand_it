@@ -93,7 +93,7 @@ export const testimonials: Testimonial[] = [
 
 export const teamMembers: TeamMember[] = [
   {
-    name: 'Lounis',
+    name: 'Lounis HAND OUYAHIA',
     role: 'Founder',
     image: 'images/team/user-1.jpg',
     twitter: '#!',
