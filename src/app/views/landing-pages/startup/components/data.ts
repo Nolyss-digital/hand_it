@@ -95,7 +95,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: 'Lounis HAND OUYAHIA',
     role: 'Founder',
-    image: 'images/team/user-1.jpg',
+    image: 'images/team/user-1.png',
     twitter: '#!',
     facebook: '#!',
     linkedin: '#!'
