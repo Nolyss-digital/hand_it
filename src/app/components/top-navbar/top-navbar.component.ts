@@ -20,7 +20,7 @@ navLinks = [
 ];
 
   @Input() navbarLight?: boolean
-  isCollapsed = false;
+  isCollapsed = true;
   isSticky = false
 
   currentSection = 'home';
