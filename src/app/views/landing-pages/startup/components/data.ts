@@ -99,14 +99,6 @@ export const teamMembers: TeamMember[] = [
     twitter: '#!',
     facebook: '#!',
     linkedin: '#!'
-  },
-  {
-    name: 'test',
-    role: 'test',
-    image: 'images/team/user-4.jpg',
-    twitter: '#!',
-    facebook: '#!',
-    linkedin: '#!'
   }
 ];
 
