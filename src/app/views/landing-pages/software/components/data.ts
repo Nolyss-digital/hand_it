@@ -2,7 +2,7 @@ import type { PricingPlan, Service, TeamMember, Testimonial } from "./types";
 
 export const services: Service[] = [
   {
-    title: 'ENGIE – Projet STARSHIP (GEM IS)',
+    title: 'Projet STARSHIP (GEM IS)',
     description: 'Pilotage et développement d’une application critique de dispatching gaz : gestion en temps réel des capacités de transport et de stockage, calculs asynchrones et exposition des données via APIs pour application web Angular.',
     icon: 'ti-gas-station',
     link: '#!',
@@ -10,14 +10,14 @@ export const services: Service[] = [
     textClass: 'text-white'
   },
   {
-    title: 'La Française AM – Projet YARIS',
+    title: 'Projet YARIS',
     description: 'Application de gestion immobilière pour les gestionnaires de biens : actifs, baux, locataires et assurances, basée sur une architecture WPF MVVM avec Entity Framework et reporting SSRS.',
     icon: 'ti-building-estate',
     link: '#!',
     textClass: 'text-muted'
   },
   {
-    title: 'La Française AM – Projet INDICO',
+    title: 'Projet INDICO',
     description: 'Plateforme back-office d’industrialisation des processus financiers et comptables : automatisation des souscriptions, distributions, génération documentaire et flux SEPA.',
     icon: 'ti-settings-automation',
     link: '#!',
