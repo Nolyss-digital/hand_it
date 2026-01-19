@@ -22,8 +22,8 @@ export type TeamMember = {
   name: string;
   role: string;
   image: string;
-  twitter: string;
-  facebook: string;
+  // twitter: string;
+  // facebook: string;
   linkedin: string;
 }
 

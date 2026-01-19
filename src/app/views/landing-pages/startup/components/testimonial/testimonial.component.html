@@ -1,5 +1,7 @@
 <section class="section bg-light" id="témoignage">
   <div class="container">
+
+    <!-- ===== TITLE ===== -->
     <div class="row justify-content-center">
       <div class="col-lg-7">
         <div class="title text-center mb-5">
@@ -8,49 +10,151 @@
               <i class="ti ti-messages text-white f-18"></i>
             </span>
             <i class="ti ti-line-dashed text-primary fs-5"></i>
-            <span class="badge bg-light border text-primary py-2 px-3 f-14">Testimonial</span>
+            <span class="badge bg-light border text-primary py-2 px-3 f-14">
+              Testimonial
+            </span>
           </p>
           <h3>Ce que disent nos clients</h3>
           <p class="text-muted">
             Découvrez les retours de nos clients sur la qualité de nos solutions et de notre accompagnement.
           </p>
-
         </div>
       </div>
     </div>
+
+    <!-- ===== REVIEWS LIST ===== -->
     <div class="row g-3">
       <div *ngFor="let testimonial of testimonials" class="col-lg-6">
-        <div class="card border-0 shadow-sm">
+        <div class="card border-0 shadow-sm h-100">
           <div class="card-body">
-            <div class="row justify-content-between">
-              <div class="col-lg-4">
-                <img [src]="testimonial.image" alt="" class="img-fluid rounded" height="150" width="150">
+            <div class="row g-3 align-items-center">
+
+              <!-- IMAGE -->
+              <div class="col-lg-4 text-center">
+                <img [src]="testimonial.image || 'https://i.pravatar.cc/150?img=3'" alt="avatar"
+                  class="img-fluid rounded" width="150" height="150" />
               </div>
+
+              <!-- CONTENT -->
               <div class="col-lg-8">
-                <div class="d-flex gap-4">
-                  <a href="#!" class="text-dark fw-semibold">{{ testimonial.name }}</a>
+                <div class="d-flex gap-2 align-items-center flex-wrap">
+                  <span class="fw-semibold text-dark">
+                    {{ testimonial.name }}
+                  </span>
                   <span class="text-muted">|</span>
-                  <span class="text-muted f-14">{{ testimonial.role }}</span>
+                  <span class="text-muted f-14">
+                    {{ testimonial.role || 'Client' }}
+                  </span>
                 </div>
+
+                <!-- RATING -->
                 <div class="d-flex align-items-center gap-2 my-2">
-                  <h4 class="text-muted fw-semibold m-0">{{ testimonial.rating }}</h4>
+                  <span class="text-muted fw-semibold">
+                    {{ testimonial.rating }}
+                  </span>
                   <ul class="p-0 m-0 ms-2 fs-6 d-flex text-warning">
-                    <!-- Full Stars -->
+                    <!-- Full stars -->
                     <li *ngFor="let star of getFullStars(testimonial.rating)">
                       <i class="ti ti-star-filled"></i>
                     </li>
-                    <!-- Half Star -->
+
+                    <!-- Half star -->
                     <li *ngIf="hasHalfStar(testimonial.rating)">
                       <i class="ti ti-star-half-filled"></i>
                     </li>
                   </ul>
                 </div>
-                <p class="mb-0 text-muted">{{ testimonial.review }}</p>
+
+                <!-- REVIEW TEXT -->
+                <p class="mb-0 text-muted">
+                  {{ testimonial.review }}
+                </p>
               </div>
+
             </div>
           </div>
         </div>
       </div>
+
+      <!-- EMPTY STATE -->
+      <div *ngIf="testimonials.length === 0" class="col-12 text-center">
+        <p class="text-muted">
+          Aucun avis pour le moment.
+        </p>
+      </div>
     </div>
+
+    <!-- ===== ADD REVIEW FORM ===== -->
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-12">
+        <div class="card border-0 shadow-sm">
+          <div class="card-body">
+
+            <h5 class="mb-3 text-center">Laisser un avis</h5>
+
+            <form (ngSubmit)="submitReview()" #reviewForm="ngForm">
+
+              <div class="row g-3">
+
+                <!-- Nom -->
+                <div class="col-md-6">
+                  <label class="form-label">Nom</label>
+                  <input type="text" class="form-control" name="name" [(ngModel)]="review.name" required />
+                </div>
+
+                <!-- Fonction / Role -->
+                <div class="col-md-6">
+                  <label class="form-label">Fonction</label>
+                  <input type="text" class="form-control" name="role" [(ngModel)]="review.role" />
+                </div>
+
+              </div>
+
+              <div class="row g-3 mt-3">
+
+                <!-- Photo URL -->
+                <div class="col-md-6">
+                  <label class="form-label">Photo (URL)</label>
+                  <input type="url" class="form-control" name="image" [(ngModel)]="review.image"
+                    placeholder="https://..." />
+                </div>
+
+                <!-- Note / Rating -->
+                <div class="col-md-6">
+                  <label class="form-label">Note</label>
+                  <select class="form-select" name="rating" [(ngModel)]="review.rating" required>
+                    <option [ngValue]="5">★★★★★ (5)</option>
+                    <option [ngValue]="4">★★★★☆ (4)</option>
+                    <option [ngValue]="3">★★★☆☆ (3)</option>
+                    <option [ngValue]="2">★★☆☆☆ (2)</option>
+                    <option [ngValue]="1">★☆☆☆☆ (1)</option>
+                  </select>
+                </div>
+
+              </div>
+
+              <div class="row g-3 mt-3">
+                <!-- Message / Review -->
+                <div class="col-12">
+                  <label class="form-label">Message</label>
+                  <textarea class="form-control" rows="4" name="review" [(ngModel)]="review.review" required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100 mt-3" [disabled]="reviewForm.invalid">
+                Envoyer l’avis
+              </button>
+
+              <p class="text-muted text-center mt-3 mb-0 f-14">
+                Votre avis sera publié après validation.
+              </p>
+            </form>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>

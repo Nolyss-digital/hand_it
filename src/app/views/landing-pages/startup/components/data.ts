@@ -3,25 +3,36 @@ import type {  Feature, PricingPlan, service, TeamMember, Testimonial } from "./
 export const features: Feature[] = [
   {
     icon: 'ti ti-code',
-    title: 'Développement sur mesure',
-    description: 'Solutions digitales adaptées à vos besoins métiers.'
+    title: 'Développement .NET & C#',
+    description: 'Applications robustes en C#, .NET, WPF, ASP.NET, Web API et architectures multi-tiers.'
   },
   {
-    icon: 'ti ti-device-desktop',
-    title: 'Web & applications',
-    description: 'Sites web, plateformes et outils performants.'
+    icon: 'ti ti-layout-dashboard',
+    title: 'Applications métiers complexes',
+    description: 'Conception et développement de solutions métiers pour la finance, l’immobilier et l’énergie.'
   },
   {
-    icon: 'ti ti-shield-lock',
-    title: 'Sécurité & fiabilité',
-    description: 'Protection des données et stabilité en production.'
+    icon: 'ti ti-database',
+    title: 'Bases de données & performance',
+    description: 'SQL Server, Oracle, PostgreSQL : modélisation, optimisation, procédures stockées et traitements lourds.'
   },
   {
-    icon: 'ti ti-rocket',
-    title: 'Performance & scalabilité',
-    description: 'Solutions prêtes à évoluer avec votre croissance.'
+    icon: 'ti ti-arrows-shuffle',
+    title: 'Intégration & flux de données',
+    description: 'Web services WCF/REST, ETL, échanges inter-applicatifs, automatisation et synchronisation de données.'
+  },
+  {
+    icon: 'ti ti-briefcase',
+    title: 'Gestion de projet & Agile',
+    description: 'Pilotage de projets, Scrum, Kanban, recueil des besoins, backlog, coordination équipes et clients.'
+  },
+  {
+    icon: 'ti ti-cloud',
+    title: 'Cloud, DevOps & Automatisation',
+    description: 'Azure, CI/CD, déploiements automatisés, sécurité, scalabilité et mise en production.'
   }
 ];
+
 
 
 
@@ -96,9 +107,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Lounis HAND OUYAHIA',
     role: 'Founder',
     image: 'images/team/user-1.png',
-    twitter: '#!',
-    facebook: '#!',
-    linkedin: '#!'
+    linkedin: 'https://www.linkedin.com/company/hand-it/'
   }
 ];
 

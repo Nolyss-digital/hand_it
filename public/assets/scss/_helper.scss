@@ -131,28 +131,7 @@ a.text-custom:hover {
   background-color: rgba($primary , 0.1);
 }
 
-.img-part {
-  &::after {
-      content: "";
-      position: absolute;
-      right: 128px;
-      height: 300px;
-      width: 300px;
-      bottom: 75%;
-      background-color: rgba($primary , 0.4);
-      margin: 0 auto;
-      border-radius: 50%;
-      -webkit-transform: translateY(50%);
-      transform: translateY(50%);
-      -webkit-transition: all .5s;
-      transition: all .5s;
-      z-index: -1;
 
-      @media(max-width: 568.98px) {
-          display: none;
-      }
-  }
-}
 
 .form-check-input {    
   &:checked {
