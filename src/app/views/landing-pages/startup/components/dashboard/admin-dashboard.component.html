@@ -7,13 +7,13 @@
     </div>
 
     <div class="row g-3" *ngFor="let review of allReviews">
-      <div class="col-lg-6">
+      <div class="col-lg-12">
         <div class="card shadow-sm border-0">
           <div class="card-body d-flex gap-3 align-items-center">
 
             <!-- IMAGE -->
             <img
-              [src]="review.image || 'https://i.pravatar.cc/150?img=3'"
+              [src]="review.image || 'https://hand-it.fr/user.png'"
               alt="avatar"
               width="80"
               height="80"

@@ -31,8 +31,8 @@
 
               <!-- IMAGE -->
               <div class="col-lg-4 text-center">
-                <img [src]="testimonial.image || 'https://i.pravatar.cc/150?img=3'" alt="avatar"
-                  class="img-fluid rounded" width="150" height="150" />
+                <img [src]="testimonial.image || 'https://hand-it.fr/user.png'" alt="avatar" class="img-fluid rounded"
+                  width="150" height="150" />
               </div>
 
               <!-- CONTENT -->
@@ -97,30 +97,29 @@
               <div class="row g-3">
 
                 <!-- Nom -->
-                <div class="col-md-6">
+                <div class="col-md-4">
                   <label class="form-label">Nom</label>
                   <input type="text" class="form-control" name="name" [(ngModel)]="review.name" required />
                 </div>
 
                 <!-- Fonction / Role -->
-                <div class="col-md-6">
+                <div class="col-md-4">
                   <label class="form-label">Fonction</label>
                   <input type="text" class="form-control" name="role" [(ngModel)]="review.role" />
                 </div>
 
-              </div>
 
-              <div class="row g-3 mt-3">
+
 
                 <!-- Photo URL -->
-                <div class="col-md-6">
+                <!-- <div class="col-md-6">
                   <label class="form-label">Photo (URL)</label>
                   <input type="url" class="form-control" name="image" [(ngModel)]="review.image"
                     placeholder="https://..." />
-                </div>
+                </div> -->
 
                 <!-- Note / Rating -->
-                <div class="col-md-6">
+                <div class="col-md-4">
                   <label class="form-label">Note</label>
                   <select class="form-select" name="rating" [(ngModel)]="review.rating" required>
                     <option [ngValue]="5">★★★★★ (5)</option>
@@ -132,7 +131,6 @@
                 </div>
 
               </div>
-
               <div class="row g-3 mt-3">
                 <!-- Message / Review -->
                 <div class="col-12">
