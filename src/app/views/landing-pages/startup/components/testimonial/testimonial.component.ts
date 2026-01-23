@@ -22,6 +22,18 @@ export class TestimonialComponent implements OnInit {
 
   testimonials: any[] = [];
 
+  // 🔹 MODAL STATE
+  showModal = false;
+
+  openModal() {
+    this.showModal = true;
+  }
+
+  closeModal() {
+    this.showModal = false;
+  }
+
+  // 🔹 FORM MODEL
   review = {
     name: '',
     role: '',
@@ -44,7 +56,7 @@ export class TestimonialComponent implements OnInit {
     });
   }
 
-  // ✅ METHOD CALLED FROM HTML
+  // ✅ SINGLE METHOD (FIXED)
   submitReview(): void {
     if (!this.review.name || !this.review.review) {
       return;
@@ -61,6 +73,8 @@ export class TestimonialComponent implements OnInit {
     })
       .then(() => {
         this.success = true;
+
+        // reset form
         this.review = {
           name: '',
           role: '',
@@ -68,6 +82,9 @@ export class TestimonialComponent implements OnInit {
           rating: 5,
           review: ''
         };
+
+        // close modal
+        this.closeModal();
       })
       .catch((error) => {
         console.error('Erreur ajout avis:', error);
