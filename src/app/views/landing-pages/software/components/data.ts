@@ -53,7 +53,7 @@ export const teamMembers: TeamMember[] = [
 export const testimonials: Testimonial[] = [
   {
     rating: 4.7,
-    text: `"Skywave has completely transformed the way we operate. The user-friendly interface and seamless integration with our existing tools have saved us countless hours of work. The support team is incredibly responsive and always goes above and beyond to help us. We've tried other solutions, but nothing compares to the efficiency and reliability of this software. It’s truly the best investment we've made for our business!"`,
+    text: `"hand-it has completely transformed the way we operate. The user-friendly interface and seamless integration with our existing tools have saved us countless hours of work. The support team is incredibly responsive and always goes above and beyond to help us. We've tried other solutions, but nothing compares to the efficiency and reliability of this software. It’s truly the best investment we've made for our business!"`,
     name: 'Danilo Tanic',
     position: 'Head of Design at Paypal',
     avatar: '/images/team/avatar-8.jpg'
@@ -74,7 +74,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     rating: 4.9,
-    text: `"Skywave has been a total game-changer for our business. The ease of use and the flexibility it offers have allowed us to customize our workflow like never before. The regular updates and new features keep us ahead of the curve, and the support team is always there when we need them. We've seen a remarkable improvement in our team's efficiency, and I can't recommend this software enough."`,
+    text: `"hand-it has been a total game-changer for our business. The ease of use and the flexibility it offers have allowed us to customize our workflow like never before. The regular updates and new features keep us ahead of the curve, and the support team is always there when we need them. We've seen a remarkable improvement in our team's efficiency, and I can't recommend this software enough."`,
     name: 'Olga D. Ward',
     position: 'Sales Manager',
     avatar: '/images/team/avatar-4.jpg'

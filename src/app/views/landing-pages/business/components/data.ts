@@ -75,42 +75,42 @@ export const services: Service[] = [
 
 export const testimonials: Testimonial[] = [
   {
-    quote: '"I couldn\'t be more thrilled with the experience I had with Skywave. The team was incredibly responsive."',
+    quote: '"I couldn\'t be more thrilled with the experience I had with hand-it. The team was incredibly responsive."',
     name: 'Dorothy C. Swarts',
     role: 'Design Lead',
     avatar: 'images/team/avatar-1.jpg',
     rating: 3.5
   },
   {
-    quote: '"I had the pleasure of working with Skywave, and it was an experience like no other. The level of professionalism."',
+    quote: '"I had the pleasure of working with hand-it, and it was an experience like no other. The level of professionalism."',
     name: 'Allyson Robi',
     role: 'Project Lead',
     avatar: 'images/team/avatar-2.jpg',
     rating: 4.5
   },
   {
-    quote: '"Choosing Skywave was one of the best decisions I\'ve ever made. From start to finish, the experience."',
+    quote: '"Choosing hand-it was one of the best decisions I\'ve ever made. From start to finish, the experience."',
     name: 'Samuel Kane',
     role: 'Developer',
     avatar: 'images/team/avatar-3.jpg',
     rating: 4.2
   },
   {
-    quote: '"Working with Skywave has been an absolute game-changer. Their innovative approach and cutting-edge."',
+    quote: '"Working with hand-it has been an absolute game-changer. Their innovative approach and cutting-edge."',
     name: 'Hazel S. Rutt',
     role: 'Manager',
     avatar: 'images/team/avatar-4.jpg',
     rating: 4.7
   },
   {
-    quote: '"I am thrilled with my experience with Skywave. Their exceptional service and attention to detail."',
+    quote: '"I am thrilled with my experience with hand-it. Their exceptional service and attention to detail."',
     name: 'Kenneth Moore',
     role: 'Design Lead',
     avatar: 'images/team/avatar-5.jpg',
     rating: 4.1
   },
   {
-    quote: '"Thanks to Skywave, I feel more informed and confident about my investment decisions than ever before."',
+    quote: '"Thanks to hand-it, I feel more informed and confident about my investment decisions than ever before."',
     name: 'John Johnson',
     role: 'Design Lead',
     avatar: 'images/team/avatar-6.jpg',
